@@ -55,7 +55,6 @@ async function uploadToCasper(users) {
 Promise.all([getUserListFromCasper(), formatForCasper()])
   .then(data => {
     let jamfUsers = data[0].data.users;
-   // console.log(jamfUsers);
     let oktaUsers = data[1];
     let newUsers = [];
     let count = 0;
